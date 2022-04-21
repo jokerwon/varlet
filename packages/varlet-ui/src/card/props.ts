@@ -31,6 +31,14 @@ export const props = {
   elevation: {
     type: [Number, String],
   },
+  floating: {
+    type: Boolean,
+    default: false,
+  },
+  floatingDuration: {
+    type: Number,
+    default: 200,
+  },
   ripple: {
     type: Boolean,
     default: false,

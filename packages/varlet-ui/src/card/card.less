@@ -43,13 +43,6 @@
 }
 
 .var-card {
-  border-radius: var(--card-border-radius);
-  overflow: hidden;
-  padding: var(--card-padding);
-  line-height: var(--card-line-height);
-  background: var(--card-background);
-  transition: background-color 0.25s;
-
   &__image {
     width: var(--card-image-width);
     height: var(--card-image-height);
@@ -81,5 +74,22 @@
   &__footer {
     padding: var(--card-footer-padding);
     margin: var(--card-footer-margin);
+  }
+
+  &__floater {
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    padding: var(--card-padding);
+    line-height: var(--card-line-height);
+    background: var(--card-background);
+  }
+
+  &__content {
+    overflow: hidden;
+  }
+
+  &--floating {
+    position: fixed;
+    overflow: auto;
   }
 }
